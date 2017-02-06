@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="s_image_slider" name="Image Slider">
+            <div id="FaderImageSlider" class="FaderImageSlider">
+                <div class="image-slider">
+                    <div id="Fader" class="fader">
+                        <div class="slide">
+                            <img src="/website_restaurant_template/static/src/img/1.jpg"/>
+                            <div class="text-slide">
+                                <h2>Text1</h2>
+                                <h3>Text2</h3>
+                                <h4>Text3</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="/website_restaurant_template/static/src/img/2.jpg"/>
+                            <div class="text-slide">
+                                <h2>Text1</h2>
+                                <h3>Text2</h3>
+                                <h4>Text3</h4>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="/website_restaurant_template/static/src/img/3.jpg"/>
+                            <div class="text-slide">
+                                <h2>Text1</h2>
+                                <h3>Text2</h3>
+                                <h4>Text3</h4>
+                            </div>
+                        </div>
+                        <div class="fader_controls">
+                            <div class="page prev" data-target="prev"><span class="fa fa-chevron-left"></span></div>
+                            <div class="page next" data-target="next"><span class="fa fa-chevron-right"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </data>
+</openerp>

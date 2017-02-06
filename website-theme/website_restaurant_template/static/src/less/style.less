@@ -1,0 +1,179 @@
+header {
+  width: 100%;
+}
+#wrapwrap .nav.navbar-nav.navbar-right {
+  float: none!important;
+  text-align:center;
+  .dropdown-menu.js_usermenu {
+    margin-top: 15px;
+    background: rgba(231,39,45,0.8);
+    border-radius: 0px;
+    a {
+        text-transform: none;
+    }
+  }
+  .dropdown.open {
+    a {
+      background-color: inherit!important;
+    }
+    .dropdown-menu.js_usermenu {
+      li {
+        width: 100%;
+        background: none;
+        -webkit-transition: background 700ms;
+        -o-transition: background 700ms;
+        transition: background 700ms;
+        &:hover, &:focus {
+          background: rgba(0,0,0,0.2);
+        }
+      }
+    }
+  }
+  li {
+    &.divider {
+      display: none;
+    }
+    float: none !important;
+    display: inline-block;
+    a {
+      color: white;
+      text-transform: uppercase;
+    }
+    a:not(.logo):before {
+      content: '';
+      position: absolute;
+      background-color: white;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      margin-top: -1em;
+      width: 0%;
+      -webkit-transition: 300ms ease-in-out;
+      -o-transition: 300ms ease-in-out;
+      transition: 300ms ease-in-out;
+    }
+    a:not(.logo):hover:before, a:not(.logo):active:before, a:not(.logo):focus:before, &.dropdown.open a.dropdown-toggle:not(.logo):before {
+      width: 100%;
+      left: 0;
+    }
+    .js_usermenu a:not(.logo):hover:before, .js_usermenu a:not(.logo):active:before, .js_usermenu a:not(.logo):focus:before {
+      width: 0 !important;
+    }
+  }
+}
+
+
+#wrapwrap .navbar-brand.logo {
+  margin: 0;
+  padding-top: 15px;
+}
+.navbar-default .navbar-nav > .active > a{
+  color: white !important;
+  background-color: transparent;
+  &:before {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  &:hover, &:active, &:focus{
+    background-color: transparent;
+  }
+}
+.navbar.navbar-default.navbar-static-top {
+  background-color: transparent;
+  height: 70px;
+  border: none;
+}
+#wrapwrap header {
+  position: absolute;
+}
+#slider_content .carousel-inner .item {
+  background-color: #222222;
+}
+#slider_content #myQuoteCarousel {
+  height: 650px !important;
+}
+
+#slider_content {
+  blockquote {
+    margin-top: 300px !important;
+    border: none;
+  }
+}
+.fader{
+    position: relative;
+    padding-top: 60%;
+    overflow: hidden;
+}
+
+.fader .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.fader img{
+    height: auto;
+}
+
+.fader .prev,
+.fader .next{
+  position: absolute;
+  line-height: 55px;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  top: 50%;
+  left: 0;
+  z-index: 4;
+  margin-top: -25px;
+  cursor: pointer;
+  opacity: .7;
+  transition: all 250ms;
+}
+
+.fader .prev:hover,
+.fader .next:hover{
+  opacity: 1;
+}
+
+.fader .next{
+  left: auto;
+  right: 0;
+}
+
+.fader .pager_list{
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  bottom: 0;
+  text-align: center;
+  z-index: 4;
+}
+
+.fader .pager_list li{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 7px;
+  background: #fff;
+  opacity: .7;
+  text-indent: -999px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 250ms;
+}
+
+.fader .pager_list li:hover,
+.fader .pager_list li.active{
+  opacity: 1;
+}
+.text-slide {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+}
